@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&display=swap');
+
+body {
+  margin: 50px;
+  font-family: 'Bad Script', cursive;
+  display: flex;
+  align-items: flex-start;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+h1{
+  display: flexbox;
+  align-items: flex-start;
+}
