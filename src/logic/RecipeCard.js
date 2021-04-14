@@ -18,7 +18,7 @@ const SLI = styled.li`
 `;
 const str = window.location.pathname;
 
-const recipe = recipeList[0];
+const recipe = recipeList[3];
 console.log("recipe",recipe);
 const ingList = recipe.ingredients.map((ing) =>
 <SLI>{ing}</SLI>)
