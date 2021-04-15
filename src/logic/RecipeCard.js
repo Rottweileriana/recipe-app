@@ -1,6 +1,7 @@
 import styled from "styled-components"
 import recipeList from "./RecipeList"
-
+// https://spoonacular.com/food-api/docs
+import { useParams } from "react-router-dom";
 const SDiv = styled.div`
     color: black;
     padding-top: 10px;
@@ -17,18 +18,22 @@ const SLI = styled.li`
     decoration: none;
 `;
 const str = window.location.pathname;
+console.log(window.location.pathname)
 
-const recipe = recipeList[3];
-console.log("recipe",recipe);
-const ingList = recipe.ingredients.map((ing) =>
-<SLI>{ing}</SLI>)
-const directionsList = recipe.directions.map((directions) =>
-<SLI>{directions}</SLI>)
 
 console.log(str)
 
 function RecipeCard() {
-    console.log("hej från card")
+    let { id } = useParams();
+    const findRecipeIndex = (element => element.id === id); 
+    const recipeIndex = recipeList.findIndex(findRecipeIndex);
+    const recipe = recipeList[recipeIndex];
+    const ingList = recipe.ingredients.map((ing) =>
+    <SLI>{ing}</SLI>)
+    const directionsList = recipe.directions.map((directions) =>
+    <SLI>{directions}</SLI>)
+    // kolla in .find() som finns under arraye
+    console.log("hej från card " + id)
     return (<SDiv>
         <h1>{recipe.name}</h1>
         <img src={recipe.image} alt=""/>

@@ -26,7 +26,8 @@ function RecipeItem(props) {
     //console.log(path);
 
     return(<StyledLI>
-        <Link to = {`/${props.item.name.toLowerCase()}`}>
+        {/* <Link to = {`/${props.item.name.toLowerCase()}`}> */}
+        <Link to = {`/recipe_detail/${props.item.id}`}>
       <Simg src={props.item.image}  alt={props.item.name}/>
       <Sh1>{props.item.name}</Sh1>
       </Link>

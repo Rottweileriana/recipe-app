@@ -30,7 +30,7 @@ function App() {
     <Route path = "/recept_a-o">
     <RecipeListMap/>
     </Route>
-    <Route path >
+    <Route path="/recipe_detail/:id">
       <RecipeCard/>
     </Route>     
      </Switch>
