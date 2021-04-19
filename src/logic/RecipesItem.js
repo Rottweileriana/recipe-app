@@ -22,9 +22,6 @@ const Simg= styled.img`
     height: 150px;
 `
 function RecipeItem(props) {
-    const path = props.item.url;
-    //console.log(path);
-
     return(<StyledLI>
         {/* <Link to = {`/${props.item.name.toLowerCase()}`}> */}
         <Link to = {`/recipe_detail/${props.item.id}`}>

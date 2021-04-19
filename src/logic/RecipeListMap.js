@@ -6,12 +6,25 @@ const StyledUL = styled.ul`
 display: flex;
 list-style-type: none;
 `;
+const realRecipeList = recipeList.filter(function(recipies){
+    return recipies.name !== ""
+});
+//Sort the recipe list on alphabetical order
+realRecipeList.sort(function (a,b){
+    let nameA = a.name.toLowerCase(), nameB = b.name.toLowerCase();
+    if (nameA < nameB)
+        return -1
+    else if (nameA > nameB)
+        return 1
+    return 0
+});
+/////////////////////////////////////////////
 
 const RecipeListMap = () => {
     
     return ( 
     <StyledUL>
-    {recipeList.map(function(item)
+    {realRecipeList.map(function(item)
     {
         return (
          <RecipesItem key = {item.id} item = {item} /> 

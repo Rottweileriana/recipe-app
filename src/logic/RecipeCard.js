@@ -7,6 +7,7 @@ const SDiv = styled.div`
     padding-top: 10px;
     >img{
         width: 25%;
+        border-radius: 10%;
     }
 `;
 
@@ -37,8 +38,9 @@ function RecipeCard() {
     return (<SDiv>
         <h1>{recipe.name}</h1>
         <img src={recipe.image} alt=""/>
+        <h4>{recipe.portions} portioner</h4>
         <SUL>
-        {ingList}
+            {ingList}
         </SUL>
         <br/>
         <ol>

@@ -1,6 +1,7 @@
 const recipeList = [
     {
         "name": "",
+        "portions": "",
         "duration": "",
         "ingredients": [    "",
                             ""],
@@ -11,49 +12,62 @@ const recipeList = [
         "author": "",
         "from": "",
         "published": "",
-        "url": "",
-        "notes": ""
+        "stars": "",
+        "notes": "",
+        "taggs": [""]
     
     
     },
     {
         "name": "Apelsinmarmelad",
-        "duration": "",
-        "ingredients": [ "1 kg Apelsin",
-                         "1 l Vatten", 
-                         "2 l Socker", 
-                         "2 tsk Citronsyra"],
-        "directions": [ "Tvätta apelsinerna", 
-                        "Skär apelsinerna i så tunna skivor som möjligt.Ta förna och skalet och lägg i en bit typ, knyt ihop till en liten påse.", 
-                        "Lägg frukten och påsen i en gryta med vatten och lå dra i ett dygn."],
+        "portions": "4",
+        "duration": "1560",
+        "ingredients": [ "1 kg apelsin",
+                         "1 l vatten", 
+                         "2 l socker", 
+                         "2 tsk citronsyra"],
+        "directions": [ "Borsta apelsinerna noga med varmt vatten", 
+                        "Skär apelsinerna i fyra klyftor och skiva sedan varje klyfta så tunt som möjligt. Ta vara på kärnorna och knyt ihop dem i en bit gasbinda.", 
+                        "Lägg frukt och kärnknyte i en gryta och häll på vattnet. Låt stå ett dygn så får marmeladen mer smak.",
+                        "Koka sedan upp frukt och vatten, och koka under lock på svag värme ca 45 min. Rör ner sockret och koka marmeladen utan lock ytterligare ca 45 min.",
+                        "Gör marmeladprovet. Häll upp lite marmelad på ett fat. Dra en sked igenom. Om marmeladen inte rinner ihop igen är den färdig. Koka annars en stund till.",
+                        "Ta sedan bort kärnknytet, rörut citronsyran i lite vatten och tillsätt den.",
+                        "Häll upp marmeladen i rena, varma burkar och låt svalna."],
         "id": "1",
         "image": "https://images.unsplash.com/photo-1612547854156-3aae03949fed?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1834&q=80",
         "author": "Maud Lindblå",
         "from": "Sparas kokbok",
         "published": "Tidens förlag 1983",
-        "url": "http://localhost:3000/apelsinmarmelad",
-        "notes": ""
+        "stars": "",
+        "notes": "En eller två appelsiner kan bytas ut mon citron eller grapefrukt om man vill ha annan smak på marmeladen. OBS! Koka aldrig dubbel sats, då finns det risk att den inte stelnar.",
+        "taggs": ["apelsin","vegetariskt"] 
     },
     {
         "name": "Apelsinsoppa",
-        "duration": "",
-        "ingredients": [    "6 dl Vatten",
-                            ""],
-        "directions": [   "Stir potato starch in some water",
-                    ""],
+        "portions": "4",
+        "duration": "10",
+        "ingredients": [    "6 dl vatten",
+                            "1,5 msk potatismjöl",
+                            "4 dl pressad apelsin el. apelsinjuce",
+                            "socker"],
+        "directions": [     "Rör ut potatismjölet i lite vatten. Koka upp resten och tillsätt redningen under omrörning.",
+                            "Låt vattnet bara koka upp och sedan svalna.",
+                            "Blanda ner de pressada apelsinensaften eller juicen och smaksätt eventuellt soppan med socker."],
         "id": "2",
         "image": "https://cdn.mytaste.org/i?u=group1%2FM00%2F01%2FAD%2FCgAIC1IUIdmANyFEAADsSwZ1jio240.jpg&w=860&h=380&c=1&q=70",
         "author": "Maud Lindblå",
         "from": "Sparas kokbok",
         "published": "Tidens förlag 1983",
-        "url": "http://localhost:3000/apelsinsoppa",
-        "notes": ""
+        "stars": "",
+        "notes": "Genom att man inte kokar appelsinsaften bevaras C-vitaminerna bättre.",
+        "taggs": ["apelsin","vegetariskt"] 
     
     
     },
     {
         "name": "Soligaste soppan",
-        "duration": "",
+        "portions": "4",
+        "duration": "50",
         "ingredients": [    "800 g pumpa, t ex butternut el. hokkaidopumpa",
                             "1 mjölig potatis",
                             "1 gul lök",
@@ -82,9 +96,56 @@ const recipeList = [
         "author": "Ylva Bergqvist",
         "from": "52 soppor",
         "published": "Bonnier Fakta 2017",
-        "url": "",
-        "notes": "TIPS: Ersätt Bacon med salta bbq-mandlar om du vill ha en helt vegitarisk soppa"
-    }
+        "stars": "",
+        "notes": "TIPS: Ersätt Bacon med salta bbq-mandlar om du vill ha en helt vegetarisk soppa",
+        "taggs": ["pumpa","bacon","soppa", "svamp"] 
+    },
+    {
+        "name": "Potatismos",
+        "portions": "4",
+        "duration": "20",
+        "ingredients": [    "ca 12-14 medelstora potatisar",
+                            "vatten",
+                            "ca 2 tsk/liter vatten salt",
+                            "2,5-3 dl mjölk",
+                            "0,5-1 tsk salt",
+                            "vitpeppar",
+                            "smör el. margarin"],
+        "directions": [     "Skala potatisarna och skär i bitar. Koka upp i saltat vatten och koka i ca 10 min, tills potatisen är mjuk.",
+                            "Slå bort kokvattnet och mosa potatisen i kastrullen med elvisp. Späd med mjölken, kall eller varm, lite i sänder.",
+                            "Rör moset luftigt med elvispen.",
+                            "Rör eventuellt ner en klick smör eller margarin och smaksätt med salt och vitpeppar."],
+        "id": "4",
+        "image": "https://cdn.pixabay.com/photo/2014/09/09/11/16/mashed-potatoes-439976_960_720.jpg",
+        "author": "Maud Lindblå",
+        "from": "Sparas kokbok",
+        "published": "Tidens förlag 1983",
+        "stars": "",
+        "notes": "Grönt mos: blanda ner hackad förvälld spenat. Krydda ev. med lite muskot. Knaprigt mos: Blanda ner lite rårivna morötter. Överblivet mos kan blandas med ägg och ev lite mjöl och använs till potatisbullar eller gratäng.",
+        "taggs": ["potatis","vegetariskt"] 
+    },
+    {
+        "name": "Potatisbullar",
+        "portions": "4",
+        "duration": "15",
+        "ingredients": [    "5-6 dl potatismos",
+                            "2 ägg",
+                            "2-3 msk vetemjöl",
+                            "smör el. margarin",
+                            "salt"],
+        "directions": [     "Vispa upp äggen och blanda i det kalla potatismoset. Blanda eventuellt också i lite vetemjöl. Smaksätt med salt om det behövs.",
+                            "Bryn smör eller margarin i en stekpanna. Koka ner smeten, platt till och tek potatisbullarna på båda sidor."],
+        "id": "5",
+        "image": "https://images.unsplash.com/photo-1563012678-bdfec255931b?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHBvdGF0b3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+        "author": "Maud Lindblå",
+        "from": "Sparas kokbok",
+        "published": "Tidens förlag 1983",
+        "stars": "",
+        "notes": "",
+        "taggs": ["potatis","ägg","vegetariskt"] 
+    
+    
+    },
 ]
     
 
