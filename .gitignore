@@ -24,5 +24,4 @@ yarn-debug.log*
 yarn-error.log*
 
 
-src/logic/TipsList.js
-src/logic/RecipeList.js
+
