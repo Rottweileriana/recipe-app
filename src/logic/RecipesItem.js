@@ -10,7 +10,7 @@ padding: 15px;
 border: 3px black solid;
 border-radius: 10px;
 margin: 12px;
-font-size: 10px;
+font-size: 12px;
 `
 const Sh1 = styled.h1`
 display: flex;

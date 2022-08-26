@@ -5,6 +5,7 @@ const SDiv = styled.div`
     color: black;
     display: inline;
     border-bottom: 5px solid;
+    font-size: 40px;
 `;
 
 
@@ -17,3 +18,4 @@ const Navbar = () => {
 }
  
 export default Navbar;
+

@@ -2,9 +2,13 @@ import RecipesItem from "./RecipesItem"
 import recipeList from "./RecipeList"
 import styled from "styled-components";
 
+
 const StyledUL = styled.ul`
 display: flex;
 list-style-type: none;
+flex-wrap: wrap;
+{/* max-width: 1800px; */}
+
 `;
 const realRecipeList = recipeList.filter(function(recipies){
     return recipies.name !== ""
